@@ -47,11 +47,12 @@ public class Test {
 			return sb.toString().trim();
 		};
 		
-		File input = new File("test_cases/shift_testcases.txt");
 		
 		LinkedList<String> chainOfNumbers = null;
 		List<String> chainOfNumbers2 = null;
-		Scanner scanner = new Scanner(System.in);
+		
+		Scanner scanner = null;
+		File input = new File("test_cases/shift_testcases.txt");
 		//Scanner scanner = new Scanner(System.in);
 		try {
 			scanner = new Scanner(input);
